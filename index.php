@@ -2,6 +2,7 @@
 	require_once('database.php');
 	require_once('index_controller.php');
 
+	$message = "";
 	if (isset($_POST['submit'])) {
 		$message = saveAndGetResultMessage();
 	} else if (isset($_POST['load_data'])) {
